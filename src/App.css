@@ -1,0 +1,30 @@
+.background {
+    background-color: var(--background-color);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.title {
+    color: var(--primary-text-color);
+
+}
+
+.card {
+    color: var(--primary-text-color);
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--container-color);
+    color: var(--primary-text-color);
+    box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+.container-sm {
+    box-shadow: 5px 5px 10px var(--shadow-color);
+    background-color: var(--container-color);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}

@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { AuthContext } from "./pages/AuthContext";
 import RequireAuth from "./components/RequireAuth";
+import './App.css'
 
 function App() {
   const [token, setToken] = useLocalStorage("token", null);
