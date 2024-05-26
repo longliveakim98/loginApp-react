@@ -13,6 +13,14 @@
     color: var(--primary-text-color);
 }
 
+#basic-nav-dropdown {
+    color: var(--primary-text-color);
+}
+
+.nav-container {
+    color: var(--primary-text-color);
+}
+
 .container {
     padding: 20px;
     border-radius: 10px;

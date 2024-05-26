@@ -5,6 +5,7 @@ import { AuthContext } from "../pages/AuthContext";
 import useLocalStorage from 'use-local-storage';
 import { Toggle } from "../components/Toggle";
 
+
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -27,7 +28,7 @@ export default function Login() {
         <div className="p-3 background vh-100 d-flex" data-theme={isDark ? "dark" : "light"}>
 
 
-            <Container className="container d-flex flex-column rounded px-5 h-75  " style={{ width: "500px", marginTop: "75px" }}>
+            <Container className="container d-flex flex-column rounded px-5 h-75 flex-wrap " style={{ width: "500px", marginTop: "75px" }}>
                 <Toggle
                     isChecked={isDark}
                     handleChange={() => setIsDark(!isDark)}
@@ -42,7 +43,7 @@ export default function Login() {
                             value={email}
                             placeholder="Enter email"
                         />
-                        <Form.Text className="text-muted ">
+                        <Form.Text className="text-secondary ">
                             We&apos;ll never share your email with anyone else.
                         </Form.Text>
                     </Form.Group>
@@ -56,7 +57,7 @@ export default function Login() {
                             placeholder="Pasword"
                         />
                     </Form.Group>
-                    <div className="align-items-center justify-content-center d-flex" >
+                    <div className="align-items-center justify-content-center d-flex " >
                         <Button className="w-75  py-3 mt-3" variant="primary" onClick={login}>Login</Button>
                     </div>
                 </Form>
